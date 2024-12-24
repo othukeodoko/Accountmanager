@@ -1,0 +1,251 @@
+.heading {
+    display: flex;
+    align-items: left;
+    font-weight: bold;
+    background-color: white;
+    color: #4d4d4d;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 50px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+nav {
+    margin-left: 0 auto;
+    margin-right: auto;
+    /* Space for the username and logo */
+    width: auto auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    /*keeps menu in one line*/
+}
+
+nav a:hover {
+    color: #4d4d4d;
+    text-indent: 10px;
+}
+
+.top-nav {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.top-nav li {
+    padding: 20px;
+    background-color: #cd5826;
+    margin: 0;
+}
+
+#logo {
+    width: 120px;
+    height: auto;
+    position: flex;
+    right: 10px;
+    margin-left: 10px;
+    top: 10px;
+    display: block;
+}
+
+html,
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    width: auto;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#customertable {
+    flex: 1;
+    margin: 0 auto;
+    width: 80%;
+    overflow-x: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid #666666;
+    border-collapse: collapse;
+    width: 0 auto;
+}
+
+.tablehead {
+    background-color: #4d4d4d;
+    color: white;
+    text-align: left;
+    text-indent: 5px;
+    width: 0 auto;
+}
+
+.username {
+    font-size: large;
+    font-weight: bold;
+    color: #f74200;
+    position: flex;
+    top: 10px;
+    right: 120px;
+    text-align: right;
+}
+
+.signout {
+    padding: 4px;
+    background-color: white;
+    border: 3px solid #454545;
+    /*Thickness of the line surrounding the login*/
+    border-radius: 10px;
+}
+
+.signout:hover {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    background-color: #434a51;
+    color: #e1e2e3;
+    padding: 10px;
+    margin-top: auto;
+    /*keeps footer at the end of the page*/
+    width:inherit;
+}
+
+#submit-all:hover {
+    background-color: #f74200;
+    color: azure;
+    border: 3px solid #f74200;
+}
+
+#submit-all {
+    width: 10%;
+    margin-left: auto;
+    border: 3px solid #434a51;
+    background-color: white;
+    color: #434a51;
+}
+
+#submitapproval {
+    width: 10%;
+    margin-left: auto;
+    border: 3px solid #434a51;
+    background-color: white;
+    color: #434a51;
+}
+
+#submitapproval:hover {
+    background-color: #f74200;
+    color: azure;
+    border: 3px solid #f74200;
+}
+
+.comment-input {
+    width: 100%; /* Adjust this value as needed */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    padding: 10px; /* Optional: add some padding for better user experience */
+    border: 1px solid #ccc; /* Optional: add border for visibility */
+    border-radius: 4px; /* Optional: rounded corners */
+}
+.submit-btn{
+    border: 1px solid #434a51;
+    background-color: white;
+    color: #434a51;
+}
+
+/* Welcome Section */
+.welcome {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Recent Updates Section */
+.updates {
+    padding: 20px;
+}
+
+.updates ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.updates li {
+    margin-bottom: 10px;
+}
+
+/* Features Overview Section */
+.features {
+    padding: 20px;
+}
+
+.feature-item {
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .heading {
+        flex-direction: column;
+        /* Stack header elements vertically */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    nav {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #logo {
+        width: 100px;
+        /* Smaller logo for smaller screens */
+        top: 10px;
+        right: 10px;
+    }
+
+    .username {
+        font-size: medium;
+        right: 120px;
+    }
+
+    .top-nav {
+        flex-direction: column;
+        /* Stack nav items vertically on small screens */
+    }
+
+    .top-nav li {
+        padding: 10px;
+        /* Reduce padding for smaller screens */
+        width: 100%;
+        /* Full width for each menu item */
+    }
+}

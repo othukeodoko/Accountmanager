@@ -1,0 +1,90 @@
+.avatarimg {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+form {
+    border: 2px solid #f74200;
+    margin-bottom: 50px;
+}
+
+.formcontainer {
+    padding: 8px;
+    text-align: center;
+
+}
+
+input[type=email],
+input[type=password] {
+    width: 40%;
+    display: block;
+    padding: 12px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #f74200;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#password-strength {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0.5px solid #f74200;
+}
+
+.weak {
+    color: red;
+}
+
+.medium {
+    color: orange;
+}
+
+.strong {
+    color: green;
+}
+
+#password-requirements {
+    margin-top: 10px;
+    font-size: 12px;
+    list-style-type: none;
+    padding: 0;
+    color: #f74200;
+}
+
+#password-requirements li.valid {
+    color: green;
+}
+
+#password-requirements li.invalid {
+    color: red;
+}
+
+button {
+    padding: 3px;
+    background-color: #4d4d4d;
+    color: white;
+    border: 1px solid #4d4d4d;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 10%;
+    margin-block: 5px;
+    display: inline-block;
+    align-items: center;
+}
+
+button:hover {
+    background-color: white;
+    color: #f74200;
+    font-weight: bold;
+}
+
+.signout {
+    padding: 4px;
+    background-color: white;
+    border: 3px solid #454545;
+    /*Thickness of the line surrounding the login*/
+    border-radius: 10px;
+}

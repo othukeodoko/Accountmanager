@@ -1,0 +1,10 @@
+# @AccountManagement_HostAddress = http://localhost:5218
+
+# GET {{AccountManagement_HostAddress}}/weatherforecast/
+# Accept: application/json
+
+###
+@AccountManagement_HostAddress = http://localhost:7089
+
+GET {{AccountManagement_HostAddress}}/login.html
+//GET {{AccountManagement_HostAddress}}/

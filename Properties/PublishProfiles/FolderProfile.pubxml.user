@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>\\192.168.0.38\c$\inetpub\wwwroot\Accountmanagement</_PublishTargetUrl>
+    <History>True|2024-12-19T14:21:34.6590414Z;True|2024-12-19T14:55:55.7325987+01:00;True|2024-11-14T16:49:24.9894201+01:00;True|2024-11-14T16:34:54.6264192+01:00;True|2024-11-14T16:00:05.1421097+01:00;True|2024-11-14T15:33:47.3382663+01:00;True|2024-11-14T12:11:51.8899959+01:00;True|2024-11-14T11:45:26.0611624+01:00;True|2024-11-14T11:19:36.2407886+01:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

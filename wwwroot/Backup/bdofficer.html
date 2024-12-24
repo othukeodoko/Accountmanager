@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="design.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD officer</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="heading">
+            <nav>
+                <ul class="top-nav">
+                    <h3 style="color:#4d4d4d; margin-right: 30px">Officer<br><span id="location"></span></h3>
+                    <li><a href="bdofficer.html" class="active">Assigned</a></li>
+                    <li><a href="home.html">Home</a></li>
+                </ul>
+            </nav>
+            <div class="username">
+                <i>Welcome Back <br><span id="username"></span></i><br>
+                <button class="signout" id="signout" onclick="signouts()">Sign Out</button>
+            </div>
+            <a id="logo" href="home.html"><img src="Images/loggo.svg"></a>
+        </header>
+
+        <table id="customertable">
+            <thead>
+                <tr class="tablehead">
+                    <th>SN</th>
+                    <th>PIN</th>
+                    <th>Surname</th>
+                    <th>First Name</th>
+                    <th>Othername</th>
+                    <th>Location</th>
+                    <th>Email Address</th>
+                    <th>Mobile Number</th>
+                    <th>Comment</th>
+                    <th>Timestamp</th>
+                </tr>
+            </thead>
+
+            <tbody id="bdofficertable"></tbody>
+
+        </table>
+    </div>
+
+    <footer id="foot" class="footer">
+        <p>GTPM &copy; 2024</p>
+        <p><a style="color:whitesmoke" href="mailto:"></a></p>
+    </footer>
+
+    <script src="bdofficer.js" type="text/javascript"></script>
+
+</body>
+
+</html>

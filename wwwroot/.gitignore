@@ -1,0 +1,34 @@
+/obj/**
+/bin/**
+.vs/
+.vs
+
+# Visual Studio files
+.vs/
+ 
+# Binaries
+/bin/
+ 
+# Debug files
+*.pdb
+ 
+# Object files
+/obj/
+ 
+# Assembly info files
+*.AssemblyInfo.cs
+/obj/Debug/net8.0/AccountManagement.AssemblyInfo.cs
+/obj/Debug/net8.0/AccountManagement.AssemblyInfoInputs.cache
+ 
+# Other ignore files
+*.dll
+*.exe
+*.cache
+*.tmp
+*.log
+``'
+
+# Ignore bin and obj folders
+**/bin/
+**/obj/
+ 

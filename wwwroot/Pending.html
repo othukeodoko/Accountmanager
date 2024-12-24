@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="design.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending</title>
+</head>
+
+
+<body>
+    <div class="container">
+        <header class="heading">
+            <nav>
+                <div class="top">
+                    <ul class="top-nav">
+                        <h2><a style="color:#4d4d4d; margin-right: 30px" href="BDteamlead.html">Team Lead</a> <br><span
+                                id="location"></span></h2>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="Assigned.html">Assigned</a></li>
+                        <li><a href="unassigned.html">Unassigned</a></li>
+                        <li><a href="Pending.html" class="active">Pending</a></li>
+                        <li><a href="Rejected.html">Rejected</a></li>
+                        <li><a href="home.html">Home</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="username">
+                <i>Welcome Back <br><span id="username"></span></i><br>
+                <button class="signout" id="signout" onclick="signouts()">Sign Out</button>
+            </div>
+            <a id="logo" href="home.html"><img src="Images/loggo.svg"></a>
+        </header>
+        <h1 style="color:#4d4d4d;">Pending Customers</h1>
+        <input type="text" id="searchWord" placeholder="Search" />
+        <table id="customertable">
+            <thead>
+                <tr class="tablehead">
+                    <th>Tick</th>
+                    <th>SN</th>
+                    <th>Status</th>
+                    <th>Surname</th>
+                    <th>First Name</th>
+                    <th><select id="locationfilter">
+                            <option value="">Location</option>
+                        </select></th>
+                    <th>AUM</th>
+                    <th><select id="bdOfficerFilter">
+                            <option value="">Agent Assigned</option>
+                        </select></th>
+                </tr>
+            </thead>
+
+            <tbody id="pendingtable"></tbody>
+
+        </table><br>
+        <button type="submit" id="submitapproval">Submit</button>
+    </div>
+
+    <footer id="foot" class="footer">
+        <p>GTPM &copy; 2024</p>
+        <p><a style="color:whitesmoke" href="mailto:"></a>
+        </p>
+    </footer>
+
+    <script src="Pending.js" type="text/javascript"></script>
+</body>
+
+</html>
