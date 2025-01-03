@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#username').textContent = usernamess;
   document.querySelector('#location').textContent = locationss;
 
-  async function FetchCustomers() {
+  async function FetchCustomers(pageNumber = 1, pageSize =10) {
     try {
-        const response = await fetch(`/accountmanager/api/Customer`);
+        const response = await fetch(`/accountmanager/api/Customer?$pageNumber=${pageNumber}&pageSize=${pageSize}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderCustomers(customerdata) {
     const result = document.getElementById('customersTable')
+	document.getElementById('pagination-metadata').innerHTML = `Page ${customerdata.pageNumber} of ${customerdata.totalPages} (${customerdata.totalRecords} records)`;
 
     result.innerHTML = customerdata.map((cust, index) => {
       return ` 
@@ -50,6 +51,20 @@ document.addEventListener('DOMContentLoaded', () => {
           `;
     }).join('');
     const table = document.getElementById("customersTable");
+	
+	const paginationControls = document.getElementById('pagination-controls');
+        paginationControls.innerHTML = `
+    <button id="previous-button" ${customerdata.pageNumber === 1 ? 'disabled' : ''}>Previous</button>
+    <button id="next-button" ${customerdata.pageNumber === customerdata.totalPages ? 'disabled' : ''}>Next</button>
+  `;
+
+        document.getElementById('previous-button').addEventListener('click', () => {
+            FetchCustomers(customerdata.pageNumber - 1, customerdata.pageSize).then(renderCustomers);
+        });
+
+        document.getElementById('next-button').addEventListener('click', () => {
+            FetchCustomers(customerdata.pageNumber + 1, customerdata.pageSize).then(renderCustomers);
+        });
 
     let totalRows=0;
 

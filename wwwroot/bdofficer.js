@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderAssigned(data) {
     const result = document.getElementById('bdofficertable')
-    result.innerHTML = data.map((employee, index) => {
+    result.innerHTML = data.data.map((employee, index) => {
 
       const lasttime = employee.commentDetails && employee.commentDetails.length > 0
         ? employee.commentDetails.reduce((latest, comment) => {

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L+Ou+HW9BZVGVLbx3j4/Dwjhf/vvPmU3++8HBoK0Xuw=",
+  "Hash": "22fgkp4oCaX/RdmobaBZEIyjv+JLN46LzKQE4jdyOvU=",
   "Source": "AccountManagement",
   "BasePath": "_content/AccountManagement",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AccountManagement\\wwwroot",
       "Source": "AccountManagement",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\.gitignore",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\.gitignore",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": ".gitignore",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\.gitignore"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\admin.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\admin.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "admin.html",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\admin.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\admin.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\admin.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "admin.js",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\admin.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\adminDashboard.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\adminDashboard.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "adminDashboard.html",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\adminDashboard.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\admindashboard.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\admindashboard.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "admindashboard.js",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\admindashboard.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Assign.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Assign.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Assign.html",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\Assign.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\assign.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\assign.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "assign.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\assign.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Assigned.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Assigned.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Assigned.html",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\Assigned.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\assigned.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\assigned.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "assigned.js",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\assigned.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\assignedBDHead.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\assignedBDHead.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "assignedBDHead.html",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\assignedBDHead.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\.gitignore",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\.gitignore",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/.gitignore",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\.gitignore"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\admin.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\admin.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/admin.html",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\admin.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\admin.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\admin.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/admin.js",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\admin.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Assign.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Assign.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Assign.html",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Assign.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\assign.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\assign.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/assign.js",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\assign.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Assigned.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Assigned.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Assigned.html",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Assigned.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\assigned.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\assigned.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/assigned.js",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\assigned.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\assignedBDHead.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\assignedBDHead.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/assignedBDHead.html",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\assignedBDHead.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\BDhead.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\BDhead.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/BDhead.html",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\BDhead.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\bdofficer.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\bdofficer.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/bdofficer.html",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\bdofficer.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\bdofficer.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\bdofficer.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/bdofficer.js",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\bdofficer.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\BDteamlead.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\BDteamlead.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/BDteamlead.html",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\BDteamlead.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\bdTeamLead.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\bdTeamLead.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/bdTeamLead.js",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\bdTeamLead.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\customer.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\customer.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/customer.js",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\customer.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\customers.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\customers.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/customers.html",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\customers.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\dashboard.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\dashboard.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/dashboard.html",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\dashboard.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\design.css",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\design.css",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/design.css",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\design.css"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\home.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\home.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/home.html",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\home.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Images\\log.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\log.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Images/log.png",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Images\\log.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Images\\loggo.svg",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\loggo.svg",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Images/loggo.svg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Images\\loggo.svg"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Images\\logo.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\logo.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Images/logo.png",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Images\\logs.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\logs.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Images/logs.png",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Images\\logs.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Images\\practice.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Images\\practice.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Images/practice.png",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Images\\practice.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\index.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\index.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/index.html",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\login.css",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\login.css",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/login.css",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\login.css"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\login.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\login.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/login.html",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\login.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\login.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\login.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/login.js",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\login.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\PasswordReset.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\PasswordReset.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/PasswordReset.html",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\PasswordReset.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Pending.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Pending.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Pending.html",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Pending.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Pending.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Pending.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Pending.js",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Pending.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\README.md",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\README.md",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/README.md",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\README.md"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Rejected.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Rejected.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Rejected.html",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Rejected.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\Rejected.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\Rejected.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/Rejected.js",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\Rejected.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\test.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\test.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/test.html",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\test.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\unassigned.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\unassigned.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/unassigned.html",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\unassigned.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Backup\\unassigned.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Backup\\unassigned.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Backup/unassigned.js",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\Backup\\unassigned.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\BDhead.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\BDhead.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "BDhead.html",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\BDhead.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\bdofficer.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\bdofficer.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "bdofficer.html",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\bdofficer.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\bdofficer.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\bdofficer.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "bdofficer.js",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\bdofficer.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\BDteamlead.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\BDteamlead.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "BDteamlead.html",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\BDteamlead.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\bdTeamLead.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\bdTeamLead.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "bdTeamLead.js",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\bdTeamLead.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Comments.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Comments.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Comments.html",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\Comments.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\comments.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\comments.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "comments.js",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\comments.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\customer.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\customer.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "customer.js",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\customer.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\customers.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\customers.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "customers.html",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\customers.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\dashboard.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\dashboard.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "dashboard.html",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\dashboard.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\design.css",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\design.css",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "design.css",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\design.css"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\home.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\home.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "home.html",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\home.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Images\\log.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\log.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Images/log.png",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\log.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Images\\loggo.svg",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\loggo.svg",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Images/loggo.svg",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\loggo.svg"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Images\\logo.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\logo.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Images/logo.png",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Images\\logs.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\logs.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Images/logs.png",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\logs.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Images\\practice.png",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Images\\practice.png",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Images/practice.png",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\Images\\practice.png"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\index.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\login.css",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\login.css",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "login.css",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\login.css"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\login.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\login.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "login.html",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\login.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\login.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\login.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "login.js",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\login.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\PasswordReset.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\PasswordReset.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "PasswordReset.html",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\PasswordReset.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Pending.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Pending.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Pending.html",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\Pending.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Pending.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Pending.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Pending.js",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\Pending.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\README.md",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\README.md",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "README.md",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\README.md"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Rejected.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Rejected.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Rejected.html",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\Rejected.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Rejected.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Rejected.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Rejected.js",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\Rejected.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Role.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Role.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Role.html",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\Role.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\Role.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\Role.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "Role.js",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\Role.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\test.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\test.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "test.html",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\test.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\unassigned.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\unassigned.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "unassigned.html",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\unassigned.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\unassigned.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\unassigned.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "unassigned.js",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\unassigned.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\user.css",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\user.css",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "user.css",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\user.css"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\User.html",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\User.html",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "User.html",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\User.html"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\user.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\user.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "user.js",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\user.js"
     },
     {
-      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\users.js",
+      "Identity": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\users.js",
       "SourceId": "AccountManagement",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hercules.Odoko\\source\\repos\\AccountManagement - Copy - Copy\\wwwroot\\",
       "BasePath": "_content/AccountManagement",
       "RelativePath": "users.js",
       "AssetKind": "All",

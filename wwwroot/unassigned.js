@@ -98,7 +98,13 @@ document.addEventListener('DOMContentLoaded', () => {
     //    document.getElementById("rowCount").innerText = `Unassigned customers are ${totalRows}`;
     //}
     function renderAssigned(data) {
+		
+		
         const result = document.getElementById('UnassignedTable');
+		if(!result){
+			console.error("Element with ID 'UnassignedTable' not found");
+			return;
+		}
         const agentOptions = agents.map(agent => `<option value="${agent.userid}">${agent.username}</option>`).join('');
 
         // Display pagination metadata

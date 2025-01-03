@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <td>${cust.othername}</td>
         <td>${cust.locationName}</td>
         <td>${cust.email}</td>
-        <td>${cust.mobilenumber}</td>
+        <td>${cust.mobileNumber}</td>
         <td>${cust.aum}</td>
         <td>${cust.bdofficername}</td>
       </tr>

@@ -340,3 +340,4 @@ C:\Users\Hercules.Odoko\source\repos\AccountManagement - Copy - Copy\obj\Release
 C:\Users\Hercules.Odoko\source\repos\AccountManagement - Copy - Copy\obj\Release\net8.0\AccountManagement.pdb
 C:\Users\Hercules.Odoko\source\repos\AccountManagement - Copy - Copy\obj\Release\net8.0\AccountManagement.genruntimeconfig.cache
 C:\Users\Hercules.Odoko\source\repos\AccountManagement - Copy - Copy\obj\Release\net8.0\ref\AccountManagement.dll
+C:\Users\Hercules.Odoko\source\repos\AccountManagement - Copy - Copy\obj\Release\net8.0\AccountManagement.sourcelink.json

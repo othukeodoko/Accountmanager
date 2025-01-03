@@ -222,7 +222,7 @@ namespace AccountManagement.Controllers
                     CustomerId = c.CustomerId,
                     CommentDetails = c.CommentDetails,
                 })
-                .Where(c => c.LocationId == id)
+                //.Where(c => c.LocationId == id)
                 .Where(c => c.LocationId == id && c.BdOfficer != null)
                 .ToListAsync();
             return Ok(customers);

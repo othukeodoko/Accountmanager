@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //        return [];
     //    }
     //};
-    async function FetchCustomerDashboard(pageNumber = 1, pageSize = 10) {
+    async function FetchCustomers(pageNumber = 1, pageSize = 10) {
         try {
             const response = await fetch(`/accountmanager/api/Customer?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        result.innerHTML = data.map((assigned, index) => {
+        result.innerHTML = data.data.map((assigned, index) => {
             const formattedComments = Array.isArray(assigned.commentDetails) && assigned.commentDetails.length > 0
                 ? assigned.commentDetails[0].commentDetails
                 : 'No comments yet';
@@ -68,9 +68,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${assigned.othername}</td>
                 <td>${assigned.locationName}</td>
                 <td>${assigned.email}</td> 
-                <td>${assigned.mobileNumber}</td>             
+                <td>${assigned.mobilenumber}</td>             
                 <td>${assigned.aum}</td>
-                <td>${assigned.bdOfficer}</td>
+                <td>${assigned.bdofficername}</td>
                 <td>${formattedComments}</td>
                 <td><button href="Comments.html" class="commentBD" data-id="${assigned.customerId}">Comments
                 </button></td>
@@ -115,8 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function initAssigned() {
         const assignedCustomer = await FetchCustomers();
-        const allManagers = [...new Set(assignedCustomer.map(item => item.bdOfficer))];
-        populateFilters(allManagers);
+        const allManagers = [...new Set(assignedCustomer.data.map(item => item.bdOfficer))];
         renderAssigned(assignedCustomer);
 
         document.getElementById('bdOfficerFilter').addEventListener('change', () => applyFilters(assignedCustomer));
@@ -189,56 +188,50 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderAssignedDash(dataDash)
-    {
-        const result = document.getElementById('teamleadtable')
+    function renderAssignedDash(dataDash) {
+        const result = document.getElementById('teamleadtableDash')
         if (!result) {
             console.error("Element with ID 'teamleadtableDash' not found.");
             return;
         }
-        if (!data || data.length === 0) {
-            console.warn("No data provided to renderAssigned.");
+        if (!dataDash || dataDash.length === 0) {
+            console.warn("No data provided to renderAssignedDash.");
             result.innerHTML = '<tr><td colspan="12">No assigned customers found.</td></tr>';
             return;
         }
-
-
-        let rowCounter = 0; /***To enable the counter start from one regardless of the position of the data on the DB****/
-
+        let rowCounter = 0;
+        /***To enable the counter start from one regardless of the position of the data on the DB****/
         result.innerHTML = dataDash.map((assigned) => {
             if (assigned.locationName === locationss)/*Location hides if locationName on table is not same as the teamleads location stored in session storage*/ {
                 rowCounter++;
                 return `
-            <tr>
-                <td>${rowCounter}</td>
-                <td>${assigned.rsapin}</td>
-                <td>${assigned.surname}</td>
-                <td>${assigned.firstname}</td>
-                <td>${assigned.othername}</td>
-                <td>${assigned.locationName}</td>
-                <td>${assigned.email}</td>
-                <td>${assigned.mobilenumber}</td>
-                <td>${assigned.aum}</td>
-                <td>${assigned.bdofficername}</td>
-            </tr>
-            `;
-            } else { return ''; }
+        <tr>
+          <td>${rowCounter}</td>
+          <td>${assigned.rsapin}</td>
+          <td>${assigned.surname}</td>
+          <td>${assigned.firstname}</td>
+          <td>${assigned.othername}</td>
+          <td>${assigned.locationName}</td>
+          <td>${assigned.email}</td>
+          <td>${assigned.mobilenumber}</td>
+          <td>${assigned.aum}</td>
+          <td>${assigned.bdofficername}</td>
+        </tr>
+      `;
+            } else {
+                return '';
+            }
         }).join('');
-
         const table = document.getElementById("teamleadtableDash");
         let tablerow = 0;
-
         for (i = 0; i < table.rows.length; i++) {
             const row = table.rows[i];
             const totalRowsCell = row.cells[9].innerText.trim();
-
             if (!totalRowsCell || totalRowsCell.toLowerCase() === "null") {
                 tablerow++;
             }
         }
-
         document.getElementById("dashrow").innerText = `${tablerow}`;
-
     }
 
 
