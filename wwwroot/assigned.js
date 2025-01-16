@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function FetchCustomersBDHead() {
     try {
-        const response = await fetch(`/accountmanager/api/AssignmentRequest/approved`);
+        const response = await fetch(`/api/AssignmentRequest/approved`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

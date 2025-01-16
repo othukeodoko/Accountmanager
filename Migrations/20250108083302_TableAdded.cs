@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AccountManagement.Migrations
 {
     /// <inheritdoc />
-    public partial class InitializeModel : Migration
+    public partial class TableAdded : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

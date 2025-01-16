@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AccountManagement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241220125950_InitializeModel")]
-    partial class InitializeModel
+    [Migration("20250108083302_TableAdded")]
+    partial class TableAdded
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

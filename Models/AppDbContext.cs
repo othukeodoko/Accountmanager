@@ -19,7 +19,8 @@ namespace AccountManagement.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder); // Ensure base Identity configuration is included
-
+            modelBuilder.Entity<ApplicationUser>().HasKey(u => u.Id);
+            modelBuilder.Entity<ApplicationUser>().HasAlternateKey(u => u.UserId);
             //Identity relationships
             modelBuilder.Entity<IdentityUserLogin<string>>(b =>
             {

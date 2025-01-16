@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const locationss = sessionStorage.getItem('locations');
   const locationIdss = sessionStorage.getItem('locationIds');
   const usernamess = sessionStorage.getItem('usernames');
-  // const locationsss = sessionStorage.getItem('userids');
+    // const locationsss = sessionStorage.getItem('userids');
+    FetchCustomers().then(renderCustomers);
 
 
   if (!roless || !usernamess || !locationIdss) {
@@ -15,9 +16,9 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('#username').textContent = usernamess;
   document.querySelector('#location').textContent = locationss;
 
-  async function FetchCustomers(pageNumber = 1, pageSize =10) {
+  async function FetchCustomers(pageNumber = 1, pageSize = 10) {
     try {
-        const response = await fetch(`/accountmanager/api/Customer?$pageNumber=${pageNumber}&pageSize=${pageSize}`);
+        const response = await fetch(`/api/Customer?pageNumber=${pageNumber}&pageSize=${pageSize}`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -31,11 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function renderCustomers(customerdata) {
-    const result = document.getElementById('customersTable')
-	document.getElementById('pagination-metadata').innerHTML = `Page ${customerdata.pageNumber} of ${customerdata.totalPages} (${customerdata.totalRecords} records)`;
+      const result = document.getElementById('customersTable');
 
-    result.innerHTML = customerdata.map((cust, index) => {
-      return ` 
+    result.innerHTML = customerdata.data.map((cust, index) =>  ` 
           <tr key=${index}>
               <td>${index + 1}</td>
               <td>${cust.rsapin}</td>
@@ -48,29 +47,34 @@ document.addEventListener('DOMContentLoaded', () => {
               <td>${cust.aum}</td>
               <td>${cust.bdofficername}</td>
           </tr>
-          `;
-    }).join('');
-    const table = document.getElementById("customersTable");
-	
-	const paginationControls = document.getElementById('pagination-controls');
-        paginationControls.innerHTML = `
+          `
+    ).join('');
+
+document.getElementById('pagination-metadata').innerHTML =
+    ` Page ${customerdata.pageNumber} of ${customerdata.totalPages} (${customerdata.totalRecords} records) `;
+
+      // Display pagination controls
+      const paginationControls = document.getElementById('pagination-controls');
+      paginationControls.innerHTML = `
     <button id="previous-button" ${customerdata.pageNumber === 1 ? 'disabled' : ''}>Previous</button>
     <button id="next-button" ${customerdata.pageNumber === customerdata.totalPages ? 'disabled' : ''}>Next</button>
   `;
 
-        document.getElementById('previous-button').addEventListener('click', () => {
-            FetchCustomers(customerdata.pageNumber - 1, customerdata.pageSize).then(renderCustomers);
-        });
+      document.getElementById('previous-button').addEventListener('click', () => {
+          FetchCustomers(customerdata.pageNumber - 1, customerdata.pageSize).then(renderCustomers);
+      });
 
-        document.getElementById('next-button').addEventListener('click', () => {
-            FetchCustomers(customerdata.pageNumber + 1, customerdata.pageSize).then(renderCustomers);
-        });
+      document.getElementById('next-button').addEventListener('click', () => {
+          FetchCustomers(customerdata.pageNumber + 1, customerdata.pageSize).then(renderCustomers);
+      });
 
+    const table = document.getElementById("customersTable");
+	
     let totalRows=0;
 
     for (let i = 0; i < table.rows.length; i++){
       const row=table.rows[i];
-      const totalRowsCell = row.cells[9].innerText.trim();
+      const totalRowsCell = row.cells[9]?.innerText.trim();
 
       if (!totalRowsCell || totalRowsCell.toLowerCase() === "null"){
         totalRows++;
@@ -78,7 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //const totalRows = table.rows.length;
     // const dataRows = totalRows - 1;
-    document.getElementById("rowCount").innerText = `${totalRows}`;
+      document.getElementById("rowCount").innerText = `${totalRows}`;
+
   }
 
   function populateFilters(Customerlocation, Customersmanager) {
@@ -99,6 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
       option.textContent = manager;
       bdOfficerFilter.appendChild(option);
     });
+
   }
 
   function filterData(datafiltered, filters) {
@@ -115,8 +121,28 @@ document.addEventListener('DOMContentLoaded', () => {
         const allManagers = [...new Set(Customers.data.map(item => item.bdofficername))];
         populateFilters(allLocations, allManagers);
         renderCustomers(Customers.data);
-        document.getElementById('locationFilter').addEventListener('change', () => applyFilters(Customers.data));
-        document.getElementById('bdOfficerFilter').addEventListener('change', () => applyFilters(Customers.data));
+  //      document.getElementById('locationFilter').addEventListener('change', () => applyFilters(Customers.data));
+  //      document.getElementById('bdOfficerFilter').addEventListener('change', () => applyFilters(Customers.data));
+
+  //      document.getElementById('pagination-metadata').innerHTML = `Page ${Customers.pageNumber} of ${Customers.totalPages} (${Customers.totalRecords} records)`;
+
+  //      const paginationControls = document.getElementById('pagination-controls');
+  //      paginationControls.innerHTML = `
+  //  <button id="previous-button" ${Customers.pageNumber === 1 ? 'disabled' : ''}>Previous</button>
+  //  <button id="next-button" ${Customers.pageNumber === Customers.totalPages ? 'disabled' : ''}>Next</button>
+  //`;
+
+  //      document.getElementById('previous-button').addEventListener('click', () => {
+  //          FetchCustomers(Customers.pageNumber - 1, Customers.pageSize).then(data => {
+  //              initCustomer();
+  //             });
+  //          });
+
+  //          document.getElementById('next-button').addEventListener('click', () => {
+  //              FetchCustomers(Customers.pageNumber + 1, Customers.pageSize).then(data => {
+  //                  initCustomer();
+  //              });
+  //          });
 
         function applyFilters(data) {
             const filters = {

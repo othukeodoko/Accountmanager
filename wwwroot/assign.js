@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function FetchPending() {
     try {
-        const response = await fetch(`/accountmanager/api/AssignmentRequest/pending`);
+        const response = await fetch(`/api/AssignmentRequest/pending`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
     }).join('');
   }
-
+ 
   function populateFilters(Customerlocation, Customersmanager) {
     const locationFilter = document.getElementById('locationfilter');
     locationFilter.innerHTML = '<option value="">Location</option>';
@@ -103,6 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+
+
     if (!allValid) {
       alert('Please provide comment and approve or reject before submitting');
       return;
@@ -114,8 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (const { action, id, comment } of assignmentapproval) {
       const endpoint = action == 'reject'
-          ? `/accountmanager/api/AssignmentRequest/reject/${id}`
-          : `/accountmanager/api/AssignmentRequest/approve/${id}`;
+          ? `/api/AssignmentRequest/reject/${id}`
+          : `/api/AssignmentRequest/approve/${id}`;
 
       const formdata = new FormData();
       formdata.append('id', id)
@@ -144,8 +146,38 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
     await init();
-  }
-  document.getElementById('submitapproval').addEventListener('click', handleAssign);
+    }
+
+    const selectallCheckbox = document.getElementById('selectAll');
+    const approveallCheckbox = document.getElementById('approveAll');
+    const rejecteallCheckbox = document.getElementById('rejectAll');
+
+    selectallCheckbox.addEventListener('change', () => {
+        const checkboxes = document.querySelectorAll('.tickCheckbox');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = selectallCheckbox.checked;
+        });
+    });
+    approveallCheckbox.addEventListener('click', () => {
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            const actionSelect = row.querySelector('.action-select');
+            actionSelect.value = 'approve'; // Set action to approve
+            row.querySelector('[data-comment]').value = 'Approved by bulk action'; // Clear comment if any
+        });
+    });
+
+    // Handle "Reject All"
+    rejecteallCheckbox.addEventListener('click', () => {
+        const rows = document.querySelectorAll('tbody tr');
+        rows.forEach(row => {
+            const actionSelect = row.querySelector('.action-select');
+            actionSelect.value = 'reject'; // Set action to reject
+            const commentField = row.querySelector('[data-comment]');
+            commentField.value = 'Rejected by bulk action'; // Add a default comment
+        });
+    });
+        document.getElementById('submitapproval').addEventListener('click', handleAssign);
 
   async function init() {
     const accounts = await FetchPending();

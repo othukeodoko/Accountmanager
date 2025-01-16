@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         // Fetch request to validate user
-        fetch('/accountmanager/api/Auth/ValidateLogin', {
+        fetch('/api/Auth/ValidateLogin', {
             method: 'POST',
             body: formData,
         })

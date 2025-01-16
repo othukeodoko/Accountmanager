@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function FetchPending() {
     try {
-        const response = await fetch(`/accountmanager/api/AssignmentRequest/pending`);
+        const response = await fetch(`/api/AssignmentRequest/pending`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     result.innerHTML = datas.map((assign, index) => {
       return ` 
               <tr>
-              <td><input type="checkbox" class="tickCheckbox" data-id="${assign.assignmentRequestId}"></td>
+              
                   <td>${index + 1}</td>
                   <td>${assign.status}</td>
                   <td>${assign.lastname}</td>
@@ -75,71 +75,71 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  async function handleAssign() {
-    const assignmentapproval = [];
-    const checkboxes = document.querySelectorAll('.tickCheckbox:checked');
-    let allValid = true;
-    console.log('is working');
+  //async function handleAssign() {
+  //  const assignmentapproval = [];
+  //  const checkboxes = document.querySelectorAll('.tickCheckbox:checked');
+  //  let allValid = true;
+  //  console.log('is working');
 
-    checkboxes.forEach(checkbox => {
-      const row = checkbox.closest('tr');
-      const action = row.querySelector('.action-select').value;
-      const comment = row.querySelector('[data-comment]').value || "";
-      const id = checkbox.getAttribute('data-id');
-      const timestampElement = row.querySelector('.timestamp');
+  //  checkboxes.forEach(checkbox => {
+  //    const row = checkbox.closest('tr');
+  //    const action = row.querySelector('.action-select').value;
+  //    const comment = row.querySelector('[data-comment]').value || "";
+  //    const id = checkbox.getAttribute('data-id');
+  //    const timestampElement = row.querySelector('.timestamp');
 
-      if (action && (action !== 'reject' || comment)) {
-        assignmentapproval.push({ action, id, comment });
-        timestampElement.textContent = new Date().toLocaleString();
-      } else {
-        allValid = false;
-        row.querySelector('.action-select').style.borderColor = 'red';
-      }
-    });
+  //    if (action && (action !== 'reject' || comment)) {
+  //      assignmentapproval.push({ action, id, comment });
+  //      timestampElement.textContent = new Date().toLocaleString();
+  //    } else {
+  //      allValid = false;
+  //      row.querySelector('.action-select').style.borderColor = 'red';
+  //    }
+  //  });
 
-    if (!allValid) {
-      alert('Please provide comment and approve or reject before submitting');
-      return;
-    }
-    if (assignmentapproval.length === 0) {
-      alert('No valid assignments Request');
-      return;
-    }
+  //  if (!allValid) {
+  //    alert('Please provide comment and approve or reject before submitting');
+  //    return;
+  //  }
+  //  if (assignmentapproval.length === 0) {
+  //    alert('No valid assignments Request');
+  //    return;
+  //  }
 
-    for (const { action, id, comment } of assignmentapproval) {
-      const endpoint = action == 'reject'
-          ? `/accountmanager/api/AssignmentRequest/reject/${id}`
-          : `/accountmanager/api/AssignmentRequest/approve/${id}`;
+  //  for (const { action, id, comment } of assignmentapproval) {
+  //    const endpoint = action == 'reject'
+  //        ? `/accountmanager/api/AssignmentRequest/reject/${id}`
+  //        : `/accountmanager/api/AssignmentRequest/approve/${id}`;
 
-      const formdata = new FormData();
-      formdata.append('id', id)
-      formdata.append('comment', comment)
-      try {
-        console.log(comment)
+  //    const formdata = new FormData();
+  //    formdata.append('id', id)
+  //    formdata.append('comment', comment)
+  //    try {
+  //      console.log(comment)
 
-        const response = await fetch(endpoint, {
-          method: 'PUT',
-          // headers: {
-          //   'Content-Type': 'application/json'
-          // },
-          body: formdata,
-        });
+  //      const response = await fetch(endpoint, {
+  //        method: 'PUT',
+  //        // headers: {
+  //        //   'Content-Type': 'application/json'
+  //        // },
+  //        body: formdata,
+  //      });
 
-        console.log(`Response for ${action} (ID: ${id}):`, response);
+  //      console.log(`Response for ${action} (ID: ${id}):`, response);
 
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        alert(`${action.charAt(0).toUpperCase() + action.slice(1)}d successfully!`);
+  //      if (!response.ok) {
+  //        throw new Error(`HTTP error! status: ${response.status}`);
+  //      }
+  //      alert(`${action.charAt(0).toUpperCase() + action.slice(1)}d successfully!`);
 
-      } catch (error) {
+  //    } catch (error) {
 
-        alert(`Failed to ${action}. Check the console for more details.`);
-      }
-    }
-    await init();
-  }
-  document.getElementById('submitapproval').addEventListener('click', handleAssign);
+  //      alert(`Failed to ${action}. Check the console for more details.`);
+  //    }
+  //  }
+  //  await init();
+  //}
+ 
 
   async function init() {
     const accounts = await FetchPending();

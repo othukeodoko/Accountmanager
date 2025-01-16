@@ -181,9 +181,11 @@ namespace AccountManagement.Controllers
         [HttpGet("pending")]
         public async Task<ActionResult<IEnumerable<AssignmentRequest>>> GetPendingAssignmentRequests()
         {
+
+            //var BdofficerName = await _context.Users.FirstOrDefaultAsync(c=> c.AgentCode =)
             var assignmentRequests = await _context.AssignmentRequests
                 .Include(ar => ar.Customer)
-                .Include(ar => ar.AssignedAgent)
+                //.Include(ar => ar.AssignedAgent.Name)
                 //.Include(ar => ar.)
                 .Where(ar => ar.Status == "Pending")
                 .Select(ar => new AssignmentRequestViewModel
@@ -194,9 +196,10 @@ namespace AccountManagement.Controllers
                     Firstname = ar.Customer.Firstname,
                     Lastname = ar.Customer.Surname,
                     BdOfficerId = ar.BdOfficerId,
-                    BdOfficerName = ar.Customer.AssignedAgent.Name,
+                    //BdOfficerName = ar.AssignedAgent != null ? ar.AssignedAgent.Name : "Unassigned",
                     Location =  ar.Customer.Location.LocationName,
                     AUM = ar.Customer.AUM,
+                    BdOfficerName = _context.Users.FirstOrDefault(u => u.AgentCode == ar.BdOfficerId).Name,
                 })
                 .ToListAsync();
 
@@ -271,7 +274,8 @@ namespace AccountManagement.Controllers
                     Firstname = ar.Customer.Firstname,
                     Lastname = ar.Customer.Surname,
                     BdOfficerId = ar.BdOfficerId,
-                    BdOfficerName = ar.Customer.AssignedAgent.Name,
+                    //BdOfficerName = ar.Customer.AssignedAgent.Name,
+                    BdOfficerName = _context.Users.FirstOrDefault(u => u.AgentCode == ar.BdOfficerId).Name,
                     Location = ar.Customer.Location.LocationName,
                     AUM = ar.Customer.AUM,
                     CommentDetails = ar.Comments.CommentDetails,

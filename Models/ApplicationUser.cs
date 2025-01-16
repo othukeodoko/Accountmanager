@@ -8,7 +8,7 @@ namespace AccountManagement.Models
         public override string Id { get; set; } = Guid.NewGuid().ToString();
         
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
         public string Name { get; set; }
         public string AgentCode { get; set; }
         public string? ContactInfo { get; set; }
