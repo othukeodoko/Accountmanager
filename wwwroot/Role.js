@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        fetch('/accountmanager/api/Role/assign', {
+        fetch('/api/Role/assign', {
             method: 'POST',
             headers:{
                 'Content-Type': 'application/json',

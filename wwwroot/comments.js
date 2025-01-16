@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function fetchComments(customerId) {
     try {
       console.log('customerId', customerId);
-        const response = await fetch(`/accountmanager/api/Comments/${customerId}/comments`);
+        const response = await fetch(`/api/Comments/${customerId}/comments`);
       if (!response.ok) {
         throw new Error(`Error fetching comments: ${response.status}`);
       }

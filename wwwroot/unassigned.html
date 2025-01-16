@@ -34,11 +34,13 @@
         <h1 style="color:#4d4d4d;">Unassigned Customers</h1>
         <input type="text" id="searchWord" placeholder="Search" />
         <p id="rowCount"></p>
-		<p id="pagination-metadata"></p>
+        
+        <p id="pagination-metadata"></p>
         <table id="customertable">
             <thead>
                 <tr class="tablehead">
-                    <th>Tick</th>
+                    <th><input type="checkbox" id="selectAll">Select All</th>
+                    <!--<th>Tick</th>-->
                     <th>SN</th>
                     <th>PIN</th>
                     <th>Surname</th>
@@ -56,10 +58,10 @@
             <tbody id="UnassignedTable"></tbody>
 
         </table>
-		<div id="pagination-controls">
-		
-		</div>
-        <button id="submit-all">Submit Selected</button>
+        <div id="pagination-controls">
+
+        </div>
+        <button id="submit-all">Submit</button>
 
     </div>
 

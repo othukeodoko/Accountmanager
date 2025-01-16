@@ -1,56 +1,91 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const roless = sessionStorage.getItem('roles');
-  const locationss = sessionStorage.getItem('locations');
-  const locationIdss = sessionStorage.getItem('locationIds');
-   const usernamess = sessionStorage.getItem('usernames');
+    const roless = sessionStorage.getItem('roles');
+    const locationss = sessionStorage.getItem('locations');
+    const locationIdss = sessionStorage.getItem('locationIds');
+    const usernamess = sessionStorage.getItem('usernames');
     const userIdss = sessionStorage.getItem('userids');
-     const locationsss = sessionStorage.getItem('agentcode');
+    const locationsss = sessionStorage.getItem('agentcode');
     let globalCustomerId;
 
-  if (!roless || !usernamess || !locationIdss) {
-    alert('User not authenticated or location data missing.');
-    window.location.href = 'login.html';
-    return;
-  }
-
-  document.querySelector('#username').textContent = usernamess;
-  document.querySelector('#location').textContent = locationss;
-
-  async function FetchAgentCustomer() {
-    try {
-        const response = await fetch(`/accountmanager/api/Customer/${userIdss}/ByAgent`);
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-      const data = await response.json();
-      console.log('Fetched Data', data);
-      return data;
-    } catch (error) {
-      console.error('Failed to fetch customers:', error);
-      return [];
+    if (!roless || !usernamess || !locationIdss) {
+        alert('User not authenticated or location data missing.');
+        window.location.href = 'login.html';
+        return;
     }
-  };
 
-  function renderAssigned(data) {
-    const result = document.getElementById('bdofficertable')
-    result.innerHTML = data.data.map((employee, index) => {
+    document.querySelector('#username').textContent = usernamess;
+    document.querySelector('#location').textContent = locationss;
 
-      const lasttime = employee.commentDetails && employee.commentDetails.length > 0
-        ? employee.commentDetails.reduce((latest, comment) => {
-          const commentDate = new Date(comment.commentDate);
-          return commentDate > latest ? commentDate : latest;
-        }, new Date(0)).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: undefined })
-        : 'No comment Yet';
+    async function FetchAgentCustomer(pageNumber = 1, pageSize = 10) {
+        try {
+            const response = await fetch(`/api/Customer/${userIdss}/ByAgent?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const data = await response.json();
+            //console.log('Fetched Data', data);
+            return data;
+        } catch (error) {
+            console.error('Failed to fetch customers:', error);
+            return [];
+        }
+    };
 
 
-      const lastdate = employee.commentDetails && employee.commentDetails.length > 0
-        ? employee.commentDetails.reduce((latest, comment) => {
-          const commentDate = new Date(comment.commentDate);
-          return commentDate > latest ? commentDate : latest;
-        }, new Date(0)).toLocaleDateString([],)
-        : 'No comment Yet';
+    async function fetchLatestCommentDate(customerId) {
+        try {
+            const response = await fetch(`/api/Comments/${customerId}/comments`); // Replace with your actual API endpoint
+            if (!response.ok) {
+                throw new Error(`Error fetching comments for customer ID: ${customerId}`);
+            }
+            const comments = await response.json();
+            if (comments.length === 0) return { date: 'No comments yet', time: '' };
 
-      return ` 
+            // Get the latest comment
+            const latestComment = comments.reduce((latest, comment) => {
+                const commentDate = new Date(comment.commentDate);
+                return commentDate > latest ? commentDate : latest;
+            }, new Date(0));
+
+            const latestCommentDate = comments.reduce((latest, comment) => {
+                const commentTime = new Date(comment.commentDate);
+                return commentTime > latest ? commentTime : latest;
+            }, new Date(0));
+
+            return {
+                date: latestCommentDate.toLocaleDateString(),
+                time: latestComment.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+            };
+        } catch (error) {
+            console.error('Failed to fetch customers:', error);
+            return { date: 'No comment yet', time: 'No comment yet' };
+        }
+    }
+    async function renderAssigned(data) {
+        const result = document.getElementById('bdofficertable');
+        document.getElementById('paginations-metadata').innerHTML = `Page ${data.pageNumber} of ${data.totalPages} (${data.totalRecords} records)`;
+
+        result.innerHTML = await Promise.all(
+            data.data.map(async (employee, index) => {
+
+                //const lasttime = employee.commentDetails && employee.commentDetails.length > 0
+                //  ? employee.commentDetails.reduce((latest, comment) => {
+                //    const commentDate = new Date(comment.commentDate);
+                //    return commentDate > latest ? commentDate : latest;
+                //  }, new Date(0)).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: undefined })
+                //  : 'No comment Yet';
+
+
+                //const lastdate = employee.commentDetails && employee.commentDetails.length > 0
+                //  ? employee.commentDetails.reduce((latest, comment) => {
+                //    const commentDate = new Date(comment.commentDate);
+                //    return commentDate > latest ? commentDate : latest;
+                //  }, new Date(0)).toLocaleDateString([],)
+                //  : 'No comment Yet';
+
+                const { date: latestCommentDate, time: latestComment } = await fetchLatestCommentDate(employee.customerId);
+
+                return ` 
           <tr key=${index}>
               <td>${index + 1}</td>
               <td>${employee.rsapin}</td>
@@ -65,50 +100,68 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="submit-btn" data-id="${employee.customerId}">Submit</button>
                 <a href="Comments.html" class="View-comments-link" data-id="${employee.customerId}">View Comments</a>
             </td>
-            <td class="timestamp">${lasttime}</td>
-            <td class="datestamp">${lastdate}</td>
+            <td class="timestamp">${latestComment}</td>
+            <td class="datestamp">${latestCommentDate}</td>
           </tr>
           `;
-    }).join('');
+            })
+        ).then(rows => rows.join(''));
 
-      document.querySelectorAll('.submit-btn').forEach(button => {
-          button.addEventListener('click', async (event) => {
-              globalCustomerId = event.target.getAttribute('data-id');
-              const commentInput = document.querySelector(`.comment-input[data-id="${globalCustomerId}"]`);
-              const commentText = commentInput.value.trim();
-              if (commentText) {
-                  await postComment(globalCustomerId, commentText);
-                  commentInput.value = ''; // Clear the input field after posting
-              } else {
-                  alert('Please enter a comment');
-              }
-          });
-      });
-  
-      //document.querySelectorAll('.submit-btn').forEach(button => {
-      //    button.addEventListener('click', async (event) => {
-      //        const customerId = event.target.previousElementSibling.getAttribute('data-id');
-      //        const commentInput = event.target.previousElementSibling;
-      //        const commentText = commentInput.value.trim();
-      //        if (commentText) {
-      //            await postComment(customerId, commentText);
-      //            commentInput.value = ''; // Clear the input field after posting
-      //        } else {
-      //            alert('Please enter a comment');
-      //        }
-      //    });
-      //});
-     
-    
-    document.querySelectorAll('.View-comments-link').forEach(link => {
-      link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const customerId = event.target.getAttribute('data-id');
-        sessionStorage.setItem('customerId', customerId); // Save customerId to sessionStorage
-        window.location.href = 'Comments.html'; // Redirect to comments page
-      });
+
+    const paginationControls = document.getElementById('pagination-controls');
+    paginationControls.innerHTML = ` 
+      <button id="previous-button" ${data.pageNumber === 1 ? 'disabled' : ''}>Previous</button>
+      <button id="next-button" ${data.pageNumber === data.totalPages ? 'disabled' : ''}>Next</button>
+      `;
+
+    document.getElementById('previous-button').addEventListener('click', () => {
+        FetchAgentCustomer(data.pageNumber - 1, data.pageSize).then(renderAssigned);
     });
-  }
+
+    document.getElementById('next-button').addEventListener('click', () => {
+        FetchAgentCustomer(data.pageNumber + 1, data.pageSize).then(renderAssigned);
+    });
+
+
+
+    document.querySelectorAll('.submit-btn').forEach(button => {
+        button.addEventListener('click', async (event) => {
+            globalCustomerId = event.target.getAttribute('data-id');
+            const commentInput = document.querySelector(`.comment-input[data-id="${globalCustomerId}"]`);
+            const commentText = commentInput.value.trim();
+            if (commentText) {
+                await postComment(globalCustomerId, commentText);
+                commentInput.value = ''; // Clear the input field after posting
+            } else {
+                alert('Please enter a comment');
+            }
+        });
+    });
+
+    //document.querySelectorAll('.submit-btn').forEach(button => {
+    //    button.addEventListener('click', async (event) => {
+    //        const customerId = event.target.previousElementSibling.getAttribute('data-id');
+    //        const commentInput = event.target.previousElementSibling;
+    //        const commentText = commentInput.value.trim();
+    //        if (commentText) {
+    //            await postComment(customerId, commentText);
+    //            commentInput.value = ''; // Clear the input field after posting
+    //        } else {
+    //            alert('Please enter a comment');
+    //        }
+    //    });
+    //});
+
+
+    document.querySelectorAll('.View-comments-link').forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const customerId = event.target.getAttribute('data-id');
+            sessionStorage.setItem('customerId', customerId); // Save customerId to sessionStorage
+            window.location.href = 'Comments.html'; // Redirect to comments page
+        });
+    });
+}
 
   async function postComment(customerId, commentText) {
     const payload = {
@@ -118,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-        const response = await fetch(`/accountmanager/api/Comments/${customerId}/comments`, {
+        const response = await fetch(`/api/Comments/${customerId}/comments`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

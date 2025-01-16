@@ -69,12 +69,25 @@ namespace AccountManagement.Controllers
                     return BadRequest($"User '{request.Email}' is already in role '{request.Role}'.");
                 }
 
-                await _userManager.AddToRoleAsync(user, request.Role);
+                //    await _userManager.AddToRoleAsync(user, request.Role);
+                //    return Ok($"Role '{request.Role}' assigned to user '{request.Email}'.");
+                //}
+                //catch (Exception ex)Microsoft.EntityFrameworkCore.DbUpdateException: 'An error occurred while saving the entity changes. See the inner exception for details
+                //{
+                //    return StatusCode(500, $"Error assigning role: {ex.Message}");
+                //}
+
+                var result = await _userManager.AddToRoleAsync(user, request.Role);
+                if (!result.Succeeded)
+                {
+                    return StatusCode(500, $"Failed to assign role: {string.Join(", ", result.Errors.Select(e => e.Description))}");
+                }
+
                 return Ok($"Role '{request.Role}' assigned to user '{request.Email}'.");
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error assigning role: {ex.Message}");
+                return StatusCode(500, $"Error assigning role: {ex.Message} - Inner Exception: {ex.InnerException?.Message}");
             }
         }
 

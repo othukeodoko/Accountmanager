@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //};
     async function FetchCustomers(pageNumber = 1, pageSize = 10) {
         try {
-            const response = await fetch(`/accountmanager/api/Customer/${locationIdss}/Unassigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+            const response = await fetch(`/api/Customer/${locationIdss}/Unassigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }

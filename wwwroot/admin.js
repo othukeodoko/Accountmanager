@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   async function FetchCustomers() {
     try {
-        const response = await fetch(`/accountmanager/api/Customer`);
+        const response = await fetch(`/api/Customer`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

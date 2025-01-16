@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const locationss = sessionStorage.getItem('locations');
     const locationIdss = sessionStorage.getItem('locationIds');
     const usernamess = sessionStorage.getItem('usernames');
+    FetchCustomerDashboard().then(renderAssignedDash);
+    FetchCustomers().then(renderAssigned);
 
 
     if (!roless || !usernamess || !locationIdss) {
@@ -32,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
     //};
     async function FetchCustomers(pageNumber = 1, pageSize = 10) {
         try {
-            const response = await fetch(`/accountmanager/api/Customer?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+            const response = await fetch(`/api/Customer/${locationIdss}/Assigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
-            const dataDash = await response.json();
-            console.log('Fetched Data', dataDash);
-            return dataDash;
+            const data = await response.json();
+            console.log('Fetched Data', data);
+            return data;
         } catch (error) {
             console.error('Failed to fetch customers:', error);
             return [];
@@ -51,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        result.innerHTML = data.data.map((assigned, index) => {
+        result.innerHTML = data.map((assigned, index) => {
             const formattedComments = Array.isArray(assigned.commentDetails) && assigned.commentDetails.length > 0
                 ? assigned.commentDetails[0].commentDetails
                 : 'No comments yet';
@@ -68,9 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 <td>${assigned.othername}</td>
                 <td>${assigned.locationName}</td>
                 <td>${assigned.email}</td> 
-                <td>${assigned.mobilenumber}</td>             
+                <td>${assigned.mobileNumber}</td>             
                 <td>${assigned.aum}</td>
-                <td>${assigned.bdofficername}</td>
+                <td>${assigned.bdOfficer}</td>
                 <td>${formattedComments}</td>
                 <td><button href="Comments.html" class="commentBD" data-id="${assigned.customerId}">Comments
                 </button></td>
@@ -78,6 +80,23 @@ document.addEventListener('DOMContentLoaded', () => {
             </tr>
             `;
         }).join('');
+
+        //document.getElementById('paginations-metadata').innerHTML = `Page ${data.pageNumber} of ${data.totalPages} (${data.totalRecords} records)`;
+
+        // Display pagination controls
+  //      const paginationControls = document.getElementById('pagination-controls');
+  //      paginationControls.innerHTML = `
+  //  <button id="previous-button" ${data.pageNumber === 1 ? 'disabled' : ''}>Previous</button>
+  //  <button id="next-button" ${data.pageNumber === data.totalPages ? 'disabled' : ''}>Next</button>
+  //`;
+
+  //      document.getElementById('previous-button').addEventListener('click', () => {
+  //          FetchCustomers(data.pageNumber - 1, data.pageSize).then(renderAssigned);
+  //      });
+
+  //      document.getElementById('next-button').addEventListener('click', () => {
+  //          FetchCustomers(data.pageNumber + 1, data.pageSize).then(renderAssigned);
+  //      });
 
         document.querySelectorAll('.commentBD').forEach(link => {
             link.addEventListener('click', (event) => {
@@ -175,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //};
     async function FetchCustomerDashboard(pageNumber = 1, pageSize = 10) {
         try {
-            const response = await fetch(`/accountmanager/api/Customer?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+            const response = await fetch(`/api/Customer/?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -201,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         let rowCounter = 0;
         /***To enable the counter start from one regardless of the position of the data on the DB****/
-        result.innerHTML = dataDash.map((assigned) => {
+        result.innerHTML = dataDash.data.map((assigned) => {
             if (assigned.locationName === locationss)/*Location hides if locationName on table is not same as the teamleads location stored in session storage*/ {
                 rowCounter++;
                 return `
@@ -222,6 +241,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 return '';
             }
         }).join('');
+
+        document.getElementById("pagination-metadata").innerHTML = `Page ${dataDash.pageNumber} of ${dataDash.totalPages} (${dataDash.totalRecords} records)`;
+
+        // Display pagination controls
+        const paginationControls = document.getElementById('pagination-controls');
+        paginationControls.innerHTML = `
+    <button id="previous-button" ${dataDash.pageNumber === 1 ? 'disabled' : ''}>Previous</button>
+    <button id="next-button" ${dataDash.pageNumber === dataDash.totalPages ? 'disabled' : ''}>Next</button>
+  `;
+
+        document.getElementById('previous-button').addEventListener('click', () => {
+            FetchCustomerDashboard(dataDash.pageNumber - 1, dataDash.pageSize).then(renderAssignedDash);
+        });
+
+        document.getElementById('next-button').addEventListener('click', () => {
+            FetchCustomerDashboard(dataDash.pageNumber + 1, dataDash.pageSize).then(renderAssignedDash);
+        });
+
         const table = document.getElementById("teamleadtableDash");
         let tablerow = 0;
         for (i = 0; i < table.rows.length; i++) {
@@ -247,26 +284,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const allManagersDash = [...new Set(assignedCustomerDash.data.map(item => item.bdOfficer))];
         populateFilters(allManagersDash);
         renderAssignedDash(assignedCustomerDash.data);
-        document.getElementById("pagination-metadata").innerHTML = `Page ${assignedCustomerDash.pageNumber} of ${assignedCustomerDash.totalPages} (${assignedCustomerDash.totalRecords} records)`;
-
-        // Display pagination controls
-        const paginationControls = document.getElementById('pagination-controls');
-        paginationControls.innerHTML = `
-    <button id="previous-button" ${assignedCustomerDash.pageNumber === 1 ? 'disabled' : ''}>Previous</button>
-    <button id="next-button" ${assignedCustomerDash.pageNumber === assignedCustomerDash.totalPages ? 'disabled' : ''}>Next</button>
-  `;
-
-        document.getElementById('previous-button').addEventListener('click', () => {
-            FetchCustomerDashboard(assignedCustomerDash.pageNumber - 1, assignedCustomerDash.pageSize).then(data => {
-                initAssignedDash();
-            });
-        });
-
-        document.getElementById('next-button').addEventListener('click', () => {
-            FetchCustomerDashboard(assignedCustomerDash.pageNumber + 1, assignedCustomerDash.pageSize).then(data => {
-                initAssignedDash();
-            });
-        });
 
         document.getElementById('bdOfficerFilter').addEventListener('change', () => applyFilters(assignedCustomerDash.data));
 

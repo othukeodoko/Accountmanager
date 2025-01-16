@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const agents = [
         { userid: '101', username: 'hercules.odoko@gtpensionmanagers.com' },//Test Account
         { userid: '402', username: 'victoria.ijeoma@gtpensionmanagers.com' },//Test Account
-        { userid: '403', username: 'taiwo.owolabi@gtpensionmanagers.com' },//Test Account
+        { userid: '2345', username: 'taiwo.owolabi@gtpensionmanagers.com' },//Test Account
         { userid: '527', username: 'chisom.anyaegbu@gtpensionmanagers.com' },
         { userid: '528', username: 'ireoluwa.abayomi@gtpensionmanagers.com' },
         { userid: '529', username: 'haruna.ahmodu@gtpensionmanagers.com' },
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //};
     async function FetchCustomers(pageNumber = 1, pageSize = 10) {
         try {
-            const response = await fetch(`/accountmanager/api/Customer/${locationIdss}/Unassigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+            const response = await fetch(`/api/Customer/${locationIdss}/Unassigned?pageNumber=${pageNumber}&pageSize=${pageSize}`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         try {
-            const response = await fetch('/accountmanager/api/AssignmentRequest/batch', {
+            const response = await fetch('/api/AssignmentRequest/batch', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -193,6 +193,16 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }
+
+    const selectallCheckbox = document.getElementById('selectAll');
+
+    selectallCheckbox.addEventListener('change', () => {
+        const checkboxes = document.querySelectorAll('.tickCheckbox');
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = selectallCheckbox.checked;
+        });
+    });
+
 
     document.getElementById('submit-all').addEventListener('click', submitAssignments);
 

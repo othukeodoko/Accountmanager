@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     console.log('Data inputed', formData);
 
-      fetch('/accountmanager/api/Auth/register', {
+      fetch('/api/Auth/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
